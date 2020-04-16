@@ -15,8 +15,8 @@ def main():
         data, addr = sock.recvfrom(1024)
         current_date = datetime.now()
         with open(CONFIG_FILENAME, 'r') as conf:
-            date_with_bias = current_date + timedelta(seconds=int(conf.readline()[:-1]))
-            sock.sendto(bytearray(str(date_with_bias.time()), encoding='UTF-8'), addr)
+            date_with_offset = current_date + timedelta(seconds=int(conf.readline()[:-1]))
+            sock.sendto(bytearray(str(date_with_offset.time()), encoding='UTF-8'), addr)
 
 
 if __name__ == '__main__':
