@@ -6,9 +6,9 @@ by Щербаков Кирилл КН-203
 
 run server in terminal with **command:** sudo python3 almost_accurate.py
 
-then open second terminal and start udp request with **command:** sudo nc -u localhost 123
+then open second terminal and establish the connection with **command:** sudo nc -u localhost 123
 
-when you press enter, you will get time with bias
+after that you can send requests and get time with bias
 
 ### info: 
 
