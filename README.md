@@ -1,4 +1,5 @@
 #"Accurate" Server
+by Щербаков Кирилл КН-203
 
 run server in terminal
 
